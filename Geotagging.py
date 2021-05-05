@@ -15,7 +15,7 @@ def tran_point(r):
 df['Point'] = df.apply(tran_point, 1)
 
 ## Read geojson
-sf = gpd.read_file(r"E:\Python\營業商家資料\商圈標記資料\TWBusinessDistinct.geojson", encoding='utf-8')
+sf = gpd.read_file(r"TWBusinessDistinct.geojson", encoding='utf-8')
 
 ## Convert to dictionary
 geodata = {}
